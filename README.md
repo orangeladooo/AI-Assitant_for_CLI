@@ -33,7 +33,7 @@ Clone the repository and install the necessary Python dependencies.
 
 ```bash
 # Clone the repository
-git clone [https://github.com/YourUsername/askai.git](https://github.com/YourUsername/askai.git)
+git clone https://github.com/orangeladooo/AI-Assitant_for_CLI/
 cd askai
 
 # Install dependencies (only 'requests' is required)
