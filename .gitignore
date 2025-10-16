@@ -1,0 +1,16 @@
+# --- Local Model Files (Crucial to ignore large files) ---
+# Add file extensions for your Llama model downloads
+*.gguf
+*.bin
+*.pth
+*.safetensors
+*.pt
+
+# --- Configuration & Logs ---
+*.log
+# If you add an .env file later for a remote API key, this keeps it local
+.env 
+
+# --- OS Artifacts ---
+.DS_Store
+Thumbs.db
