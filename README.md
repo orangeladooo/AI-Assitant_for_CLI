@@ -11,7 +11,6 @@ AskAI translates your natural language questions into executable shell commands,
 * **Local & Private:** Runs entirely on your machine using the **Ollama** server (no external API keys or costs).
 * **OS-Aware Context:** Gathers context (OS, shell, current directory) to suggest the correct command (e.g., `tasklist` on Windows, `ps aux` on Linux).
 * **Safe Execution:** Requires user confirmation before executing any suggested command, preventing accidental changes.
-* **State-Changing Support:** Handles complex commands like `cd` (change directory) by executing them directly in the current shell session.
 * **Cross-Platform:** Includes setup scripts for **Bash/Zsh (Linux/macOS)** and **PowerShell (Windows)**.
 
 ---
