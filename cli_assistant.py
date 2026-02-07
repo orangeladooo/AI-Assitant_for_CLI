@@ -6,9 +6,6 @@ import json
 import os
 import sys
 
-# --- Configuration (Change to your preferred model if needed) ---
-OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL_NAME = "codellama:7b-instruct" 
 
 class CLIAssistant:
     """The zero-cost, local AI engine for command generation."""
