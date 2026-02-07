@@ -5,8 +5,11 @@ import requests
 import json
 import os
 import sys
-OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL_NAME = "codellama:7b-instruct" 
+from dotenv import load_dotenv
+load_dotenv()
+OLLAMA_URL  = os.getenv("OLLAMA_URL")
+
+MODEL_NAME =os.getenv("MODEL_NAME")
 
 class CLIAssistant:
     """The zero-cost, local AI engine for command generation."""
