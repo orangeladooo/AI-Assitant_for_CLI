@@ -9,7 +9,11 @@
 # --- Configuration & Logs ---
 *.log
 # If you add an .env file later for a remote API key, this keeps it local
-.env 
+# .gitignore
+.env
+*.env
+.env.local
+system_prompt.txt
 
 # --- OS Artifacts ---
 .DS_Store

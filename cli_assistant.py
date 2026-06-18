@@ -19,6 +19,18 @@ class CLIAssistant:
         self.model = MODEL_NAME
         
         # Enhanced System Prompt: CRITICAL for strict command output and 'cd' detection.
+        prompt_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "system_prompt.txt")
+        if os.path.exists(prompt_path):
+            try:
+                with open(prompt_path, "r", encoding="utf-8") as f:
+                    self.system_prompt = f.read().strip()
+            except Exception as e:
+                print(f"Warning: Could not read system_prompt.txt: {e}", file=sys.stderr)
+                self._set_default_system_prompt()
+        else:
+            self._set_default_system_prompt()
+
+    def _set_default_system_prompt(self):
         self.system_prompt = (
             "You are an expert command-line assistant running on a shell. "
             "Your task is to translate a user's natural language request into a single, "
